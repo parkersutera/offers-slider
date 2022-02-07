@@ -1,0 +1,39 @@
+.app {
+  padding-top: 50px;
+
+  .square-slider {
+    height: 50vh;
+  }
+
+  .round-slider {
+    height: 50vh;
+    background: #fff;
+    .round-item {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex: none;
+      flex-direction: column;
+      text-align: center;
+    }
+    img {
+      border-radius: 100%;
+      height: 250px;
+      width: 250px;  
+      margin: auto;
+    }
+
+    .slider {
+      display: flex;
+      position: relative;
+    
+      &__container {
+        display: flex;
+        padding: 0 55px;
+        transition: transform 300ms ease 100ms;
+        z-index: 3;
+        width: 100%;
+      }
+    }
+  }
+}

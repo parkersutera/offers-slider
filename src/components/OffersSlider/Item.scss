@@ -1,0 +1,35 @@
+.item {
+  flex: 0 0 19.7%;
+  transition: transform 300ms ease 100ms;
+  margin: 0 2px;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .title-gradient{
+    display: none;
+  }
+}
+
+.item:hover {
+  .title-gradient{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,.0) 0%, rgb(0, 0, 0) 100%);
+    width: 100%;
+    color: #dadada;
+    height: 100%;
+    display: flex;
+    align-items: end;
+
+    h1 {
+      margin-left: 18px;
+    }
+  }
+}
